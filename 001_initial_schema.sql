@@ -1,0 +1,10 @@
+CREATE TABLE aruba_data (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    event_time DATETIME NOT NULL,
+    client_id VARCHAR(255) NOT NULL,
+    client_name VARCHAR(255),
+    event_type VARCHAR(255) NOT NULL,
+    event_details JSON,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);

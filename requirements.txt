@@ -1,0 +1,9 @@
+# Python-only project (infra + tests). PyMySQL is vendored in lambda_py/, so not listed here.
+aws-cdk-lib==2.153.0
+constructs>=10.0.0,<11.0.0
+
+# boto3 is available in Lambda; kept for local/test use (remove if not needed)
+boto3>=1.34.0,<2.0.0
+
+# Tests
+pytest>=8.2.0,<9.0.0

@@ -1,0 +1,6 @@
+# Python Lambda dependencies for Aruba Central ingestion
+# Note: boto3 is available in the Lambda runtime; included here for local testing.
+
+pymysql
+# boto3  # optional for local testing; Lambda runtime already provides it
+# aws-secretsmanager-caching  # remove if not actually used
